@@ -3,7 +3,6 @@ package com.smartcontactmanager.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,7 +27,7 @@ public class User {
     private String role;
     private boolean enabled;
     private String imageUrl;
-    @Column(length = 500)
+    @Column(length = 50)
     private String about;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
